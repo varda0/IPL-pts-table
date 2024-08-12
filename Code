@@ -1,0 +1,243 @@
+Code for IPL Table:
+
+<!DOCTYPE html>              
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      font-family: sans-serif;
+    }
+    th, td {
+      padding: 20px;
+      text-align: center;
+    }
+    th{
+        font-size:small;
+        font-weight: 400;
+        font-style:normal;
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        font-style: normal;
+        text-align: center;
+    }
+    .green-dot {
+        height: 15px;
+        width: 15px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 2px;
+        border: 2px solid green;
+        text-align: center;
+        line-height: 15px;
+        color: green;
+        font-weight: 400;
+    }
+    .red-dot {
+        height: 15px;
+        width: 15px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 2px;
+        border: 2px solid red;
+        text-align: center;
+        line-height: 15px;
+        color: red;
+        font-weight: 400;
+      
+    }
+    tr:first-child {
+    color:white;
+    background-color: rgb(18, 30, 96);
+}
+tr:not(:first-child):nth-child(even):hover {
+  background-color: rgba(113, 113, 116, 0.2);
+ 
+}
+tr:not(:first-child):nth-child(odd):hover {
+  background-color: rgba(113, 115, 116, 0.2);
+  
+}
+    </style>
+<body>
+    <h2>IPL2024</h2>
+    <h3>Points Table</h3>
+    <table style="width: 100%;">
+       
+      <tr>
+        <th style="text-align: left;">Rank</th>
+        <th style="text-align: left;">Team</th>
+        <th>P</th>
+        <th>W</th>
+        <th>L</th>
+        <th>Net Run Rate</th>
+        <th>Pts</th>
+        <th>W/L</th>
+      </tr>
+
+      <tr>
+        <td style="text-align: left;">1</td>
+        <td style="text-align: left;">Chennai Super Kings</td>
+        <td>5</td>
+        <td>4</td>
+        <td>1</td>
+        <td>+1.238</td>
+        <td>8</td>
+        <td>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr>
+
+      <tr>
+        <td style="text-align: left;">2</td>
+        <td style="text-align: left;">Rajasthan Royals</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>+0.832</td>
+        <td>6</td>
+        <td>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+          </td>
+      </tr>
+      
+      <tr>
+        <td style="text-align: left;">3</td>
+        <td style="text-align: left;">Mumbai Indians</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
+        <td>+0.667</td>
+        <td>6</td>
+        <td>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+          </td>
+      </tr>
+
+      <tr>
+        <td style="text-align: left;">5</td>
+        <td style="text-align: left;">Kolkata Knight Riders</td>
+        <td>5</td>
+        <td>3</td>
+        <td>2</td>
+        <td>+0.344</td>
+        <td>6</td>
+        <td>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr>
+
+      <tr>
+        <td style="text-align: left;">6</td>
+        <td style="text-align: left;">Royal Challengers Bangalore</td>
+        <td>6</td>
+        <td>3</td>
+        <td>3</td>
+        <td>-0.637</td>
+        <td>4</td>
+        <td>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr>
+
+      <tr>
+        <td style="text-align: left;">7</td>
+        <td style="text-align: left;">Sunrises Hyderabad</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>-0.073</td>
+        <td>4</td>
+        <td>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr>
+
+      <tr>
+        <td style="text-align: left;">8</td>
+        <td style="text-align: left;">Gujarat Titans</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-0.196</td>
+        <td>2</td>
+        <td>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr> 
+
+      <tr>
+        <td style="text-align: left;">9</td>
+        <td style="text-align: left;">Delhi Capitals</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>-0.975</td>
+        <td>2</td>
+        <td>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr> 
+
+      <tr>
+        <td style="text-align: left;">10</td>
+        <td style="text-align: left;">Lucknow Super Giants</td>
+        <td>6</td>
+        <td>1</td>
+        <td>5</td>
+        <td>-1.124</td>
+        <td>2</td>
+        <td>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+            <span class="green-dot">✓</span>
+            <span class="red-dot">✕</span>
+            <span class="red-dot">✕</span>
+          </td>
+      </tr> 
+    </table>
+</body>
+</html>
